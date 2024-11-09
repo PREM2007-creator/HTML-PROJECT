@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Login To RentalRidez</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet" />
+  <link href="responsive.css" rel="stylesheet" />
+</head>
+<style>
+    .container-fluid{
+        background-color: white;
+    }
+    body{
+        background-image:url(login\ photo.jpeg) ;
+        background-repeat: none;
+        
+        background-size: 100%;
+    }
+    #form{
+
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+    input{
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px blue;
+
+
+
+    }
+    
+
+</style>
+<body>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="login.html">
+            <span>
+              RentalRidez
+            </span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    </div>
+<br><br><br><br><br>
+
+<script>
+  function data()
+  {
+      var a=document.getElementById("uid").value;
+      var b=document.getElementById("pass").value;
+
+  }
+if(a==""|| b=="")
+  {
+  alert("All feilds are mandatory");
+  return false;
+
+}
+
+else{
+  true;
+}
+</script>
+
+<div id="form">
+  
+
+    
+    <form onsubmit="return data()" action="index.html" >
+        
+        UserID:<label for="name"></label> <br><br>
+        <input type="text" id = "uid"  > <br> <br><br><br>
+        
+
+       
+        Password:<label for="password"></label><br><br>
+        <input type="password" id="pass"> <br><br><br><br><br><br>
+
+        <input type="submit" value="              Login              ">
+        
+    
+    </form>
+
+</div>
+</body>
